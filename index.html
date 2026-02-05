@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopSphere | Smart Shopping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#f5f7fb;
+      color:#1f2937;
+    }
+
+    header{
+      background:linear-gradient(135deg,#6366f1,#2563eb);
+      color:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      font-size:28px;
+      font-weight:700;
+    }
+
+    nav a{
+      color:white;
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .hero{
+      padding:70px 8%;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+      align-items:center;
+    }
+
+    .hero h2{
+      font-size:44px;
+      margin-bottom:20px;
+    }
+
+    .hero span{
+      color:#2563eb;
+    }
+
+    .hero p{
+      font-size:18px;
+      margin-bottom:30px;
+      color:#4b5563;
+    }
+
+    .hero a{
+      display:inline-block;
+      background:#2563eb;
+      color:white;
+      padding:14px 34px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .hero-box{
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    section h3{
+      font-size:32px;
+      margin-bottom:40px;
+      text-align:center;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:30px;
+    }
+
+    .product{
+      background:white;
+      padding:25px;
+      border-radius:18px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .product:hover{
+      transform:translateY(-10px);
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .product img{
+      width:100%;
+      border-radius:12px;
+      margin-bottom:15px;
+    }
+
+    .product h4{
+      margin-bottom:10px;
+    }
+
+    .product p{
+      color:#2563eb;
+      font-weight:600;
+      margin-bottom:15px;
+    }
+
+    .product button{
+      background:#2563eb;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:20px;
+      cursor:pointer;
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:30px;
+      text-align:center;
+    }
+
+    .feature{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+    }
+
+    footer{
+      background:#111827;
+      color:#d1d5db;
+      text-align:center;
+      padding:25px;
+      font-size:14px;
+    }
+
+    @media(max-width:900px){
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>krish Homefood</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#features">Features</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Pure Homemade Taste,<br><span>Made with Love</span></h2>
+    <p>Krish HomeFood offers fresh, hygienic homemade pickles, sweets, hot snacks, and dry fruit laddus prepared with traditional recipes.</p>
+    <a href="#products">Shop Now</a>
+  </div>
+
+  <div class="hero-box">
+    <h3>Why Shop With Us?</h3>
+    <p>✔ Curated Products</p>
+    <p>✔ Secure Payments</p>
+    <p>✔ Fast Delivery</p>
+    <p>✔ Easy Returns</p>
+  </div>
+</section>
+
+<section id="products">
+  <h3>Our Popular Homemade Items</h3>
+  <div class="products">
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Pickles">
+      <h4>Homemade Pickles</h4>
+      <p>₹150</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Sweets">
+      <h4>Traditional Sweets</h4>
+      <p>₹200</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Hot Items">
+      <h4>Hot Snacks</h4>
+      <p>₹120</p>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Dry Fruit Laddu">
+      <h4>Dry Fruit Laddu</h4>
+      <p>₹250</p>
+      <button>Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="features">
+  <h3>Our Features</h3>
+  <div class="features">
+    <div class="feature">24/7 Customer Support</div>
+    <div class="feature">Secure Checkout</div>
+    <div class="feature">Personalized Offers</div>
+    <div class="feature">Fast Shipping</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 ShopSphere | Shopping Website Portfolio
+</footer>
+
+</body>
+</html>
